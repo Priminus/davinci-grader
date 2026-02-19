@@ -2,7 +2,8 @@
 set -euo pipefail
 
 APP="${APP:-DaVinci Resolve}"
-WORKDIR="${WORKDIR:-/Users/michaelhart/.openclaw/workspace/video-editor}"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+WORKDIR="${WORKDIR:-"$SCRIPT_DIR/.."}"
 SNAP="${SNAP:-$WORKDIR/screenshots/run}"
 mkdir -p "$SNAP"
 
