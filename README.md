@@ -20,6 +20,7 @@ Tested on **Liquid Retina XDR 16-inch (3456x2234)** only. Many coordinates are h
 
 ### Homebrew
 
+Since Peekaboo is unable to type apostrophe, which is required to switch nodes, we use cliclick to get around this limitation.
 ```bash
 brew install cliclick
 ```
